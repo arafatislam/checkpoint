@@ -1,1 +1,1 @@
-# chekpoint
+# checkpoint
