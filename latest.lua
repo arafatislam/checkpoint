@@ -1,4 +1,4 @@
-script_name("Checkpoint++")
+script_name("Checkpointssss++")
 script_author("Arafat, Adib & Salman")
 
 
@@ -12,7 +12,7 @@ local encoding = require "encoding"
 encoding.default = "CP1251"
 u8 = encoding.UTF8
 
-script_version("1.1")
+script_version("1.2")
 local dlstatus = require('moonloader').download_status
 local https = require "ssl.https"
 
