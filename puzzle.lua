@@ -1,4 +1,5 @@
-script_name("Puzzle")
+script_name("Riddler++")
+script_author("Arafat")
 script_version("2")
 
 require "moonloader"
@@ -16,31 +17,30 @@ local array = {
 }
 
 local script_path = thisScript().path
-local script_url = "https://github.com/arafatislam/checkpoint/raw/main/puzzle.lua"
+local script_url = "https://github.com/arafatislam/checkpoint/raw/main/Riddler.lua"
 
 
 
 function main()
 	while not isSampAvailable() do wait(50) end
-	sampAddChatMessage("{006a4e}Riddler{f42a41}++{FF00FF} test mod. use {006a4e}//crmt1 {FF00FF}to clear", -1)
+	sampfuncsLog("(SA:MP Squad Riddler++) Authors: " .. table.concat(thisScript().authors, ", "))
 	while true do
         if testCheat('LLLLL') then
 		
 			setRaceTrackMarker01(2, array[1]+13, array[2], array[3], 3, -1) -- start 1
 
-			sampAddChatMessage("{FFFFFF}[ {6600FF}Riddler {FFFFFF} ] {FFFFFF}Go GO GO.....", -1)
+			sampAddChatMessage("{FFFFFF}[ {6600FF}Riddler++ {FFFFFF} ] {FFFFFF}Go GO GO.....", -1)
         end
 		wait(0)
 	end
 end
 
 sampRegisterChatCommand("/crmt11", function()
-  sampAddChatMessage("{FFFFFF}[ {6600FF}Race++{FFFFFF} ] {FFFFFF}Your last checkpoint has been Distroyed", -1)
+  sampAddChatMessage("{FFFFFF}[ {6600FF}Riddler++ {FFFFFF} ] {FFFFFF}Your last checkpoint has been Distroyed", -1)
   thisScript():reload ()
 end)
 
-sampRegisterChatCommand("/puzzleupdate", function()
-  sampAddChatMessage("{FFFFFF}..", -1)
+sampRegisterChatCommand("/RiddlerUpdate", function()
   update_script()
 end)
 
