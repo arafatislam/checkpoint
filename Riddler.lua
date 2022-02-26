@@ -23,7 +23,7 @@ local script_url = "https://github.com/arafatislam/checkpoint/raw/main/Riddler.l
 
 function main()
 	while not isSampAvailable() do wait(50) end
-	sampfuncsLog("(SA:MP Squad Riddler++) Authors: " .. table.concat(thisScript().authors, ", "))
+	sampfuncsLog("(SA:MP Squad Riddler++) Authors: " .. table.concat(thisScript().authors, ", ") .. ",  Version: " .. thisScript().version)
 	while true do
         if testCheat('LLLLL') then
 		
