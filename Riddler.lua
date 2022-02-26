@@ -89,7 +89,7 @@ end
 function update_script()
 	downloadUrlToFile(script_url, script_path, function(id, status)
 		if status == dlstatus.STATUS_ENDDOWNLOADDATA then
-			sampAddChatMessage(string.format("{ABB2B9}[%s]{FFFFFF} The update was successful!", script.this.name), -1)
+			sampAddChatMessage(string.format("{ABB2B9}[%s]{FFFFFF} The update was successful! [%s]", thisScript().name, thisScript().version), -1)
 		end
 	end)
 end
